@@ -1,0 +1,3 @@
+rootProject.name = 'templatenonav'
+
+include ':app'
