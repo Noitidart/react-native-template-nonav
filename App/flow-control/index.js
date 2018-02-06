@@ -33,6 +33,7 @@ const sagas = [ ...counterSagas ];
 const store = createStore(reducers, enhancers);
 
 export const persistor = persistStore(store);
+// persistor.purge();
 
 function* rootSaga() {
     yield all(sagas.map(saga => fork(saga)));
